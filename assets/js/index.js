@@ -13,12 +13,6 @@ function ToggleMenu(){
 }}
 // End of Navigation bar in home page 
 
-
-
-console.log(localStorage.getItem('user_email'))
-
-
-
 if(localStorage.getItem('user_email') === null){
     document.getElementById('logout').style.display='none'
 }else{
