@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todo List | Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/signup.css">
+
+
+    </head>
+    <body>
+<!--Login -->
+<section id="signup-section">
+          <!-- Navigation Bar -->
+          <nav style="background-color: white;box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.2)">
+            <div style="margin-left: 15%;"><h1 style="font-size: 35px; color: #EF6F70;">Todo List</h1></div>
+            <div style="width: 30%; " id="buttons">
+              <button class="btn1" id="signup"><a href="signup.html">Sign Up</a></button>
+              <button class="btn2" id="login"><a href="login.html">Login</a></button>
+              <button class="btn2" id="logout" onclick="logout()">Logout</button>
+            </div>
+            <div class="menu" onclick="ToggleMenu()">
+              <i class="fa-solid fa-bars" style="color: #2e8ac7;"></i>
+            </div>
+          </nav>
+      <!-- End of Navigation Bar -->
+
+    <div id="layer">
+        <div id="form-container">
+            <h2>Login</h2>
+            <p style="margin: 4% 0%;color: gray;">Welcome again , Login to your account </p>
+            <form id="signUpForm">
+
+                <div class="inputs">
+                    <label>Email</label>
+                    <input type="email" id="email_login"/>
+                    <p style="color: red;margin: 3% 0%;" id="error_login"></p>
+
+                </div>
+
+
+                <div class="inputs">
+                    <label>Password</label>
+                    <input type="password" id="password_login"/>
+                </div>
+
+                <button id="sign-up-button" onclick="login()">Login</button>
+            </form>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- End of Login -->
+
+   <!--Footer-->
+   <footer>
+    <h2>Todo List</h2>
+</footer>
+<!--End of footer-->
+
+
+<script src="https://kit.fontawesome.com/0c6829628d.js" crossorigin="anonymous"></script>
+<script src="assets/js/index.js" async defer></script>  </body>
+        <script src="assets/js/Auth.js" async defer></script>
+    </body>
+</html>

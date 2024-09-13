@@ -1,0 +1,107 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+
+}
+
+:root{
+    --main-color:#EF6F70;
+    --second-color:#2e8ac7;
+    --error:red;
+    --25px-size:25px;
+    --green-color:green;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+label {
+  color: var(--main-color);
+  font-size: 18px;
+}
+input {
+  padding: 1%;
+  width: 75%;
+  border-radius: var(--25px-size);
+  margin-top: 2%;border: 1px solid rgb(210, 210, 210);
+}
+
+button{
+    padding: 1% 2%;
+  
+}
+.btnn1{background-color: var(--second-color);}.btnn2{background-color: var(--main-color);}
+
+#AddTaskForm,#updateTaskForm{
+    margin-bottom: 3%;
+    display: none;
+}
+
+.col-12{
+    grid-column: span 12;
+    padding:  3% 5%;
+}
+.col-12 h2{
+    font-size: 40px;
+}
+
+.box{
+    display: flex; margin-top: 3%;padding-bottom: 3%;
+}
+#box-content1{
+    margin: 1.5% 2%;
+}
+
+.box h3{font-size: var(--25px-size);margin: 15% 0%;}
+.box p{
+    color: gray;
+}
+
+#search{
+    text-align: center;display: flex;
+}
+#search p{
+    margin: 4% 0%;
+    color:var(--error) ;font-size: var(--25px-size);display: none;
+}
+
+#success-message{
+    position: fixed;height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);width: 100%;display: flex;
+    justify-content: center;align-items: center;text-align: center;display: none;transition: all 2s;
+}
+
+#message-content{
+    background-color: white;border-radius: var(--25px-size);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);transition: all 2s;
+    padding: 6% ;
+}
+.fa-circle-check{font-size: 50px;color: var(--green-color);}
+
+#message-content p{
+    font-size: 30px;margin: 8% 0%;
+}
+#message-content button{background-color: var(--green-color);padding: 4% 5%;}
+
+.task-completed{text-decoration: line-through;color: gray;}
+.task-completed #delete{text-decoration: none;}
+.box button{
+    padding:15% 20%; margin:15% 5%
+}
+#update{
+    background-color: var(--second-color);
+}
+#delete{background-color: var(--main-color);text-decoration: none;}
+
+.update_disabled{display: none;}
+
+.b{text-decoration: none;}
+
+@media screen and (max-width: 400px) {
+    #search #add{
+font-size: 10px;    }
+  }
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Todo List | Home</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <!-- Home section -->
+    <section id="home-section">
+      <div id="home-layer">
+      <!-- Navigation Bar -->
+      <nav>
+        <div style="margin-left: 15%;"><h1 style="font-size: 35px;">Todo List</h1></div>
+        <div style="width: 30%;" id="buttons">
+          <button class="btn1" id="signup"><a href="signup.html">Sign Up</a></button>
+          <button class="btn2" id="login"><a href="login.html">Login</a></button>
+          <button class="btn2" id="logout" onclick="logout()">Logout</button>
+        </div>
+        <div class="menu" onclick="ToggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <!-- End of Navigation Bar -->
+        <div id="home-content">
+          <div>
+            <h1>Stay Organized , Stay Productive</h1>
+            <p>
+              Simplify your tasks and never miss a deadline with our intuitive
+              to-do list app.
+            </p>
+            <button style="background-color: #2e8ac7;"><a href="tasks.html" style="text-decoration: none;color: white;">Get started</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Home section -->
+
+    <!-- Second section -->
+    <section id="second-section" class="grid">
+        <div class="col-6" id="left-side">
+            <p id="p1">Your time is gold</p>
+            <h2>Organize Tasks Your Way</h2>
+            <p>Whether it's work, school, or personal projects, our to-do list app lets you categorize tasks into custom lists. Prioritize what’s most important by setting due dates and reminders, so you can focus on what matters the most.
+            </p>
+        </div>
+        <div class="col-6">
+            <img src="assets/images/signUp.jpg" width="100%"/>
+        </div>
+
+    </section>
+    <!-- End of Second section -->
+
+    <!--Footer-->
+    <footer>
+        <h2>Todo List</h2>
+    </footer>
+    <!--End of footer-->
+    <script src="https://kit.fontawesome.com/0c6829628d.js" crossorigin="anonymous"></script>
+    <script src="assets/js/Auth.js" async defer></script>
+    <script src="assets/js/index.js" async defer></script>
+  </body>
+</html>

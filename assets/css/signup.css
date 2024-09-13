@@ -1,0 +1,69 @@
+/* Common styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0%;margin: 0%;box-sizing: border-box;  font-family: "Roboto", sans-serif;
+
+}
+
+
+#signup-section{
+    background-image: url('../images/home.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#layer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+#form-container{
+    background-color: white;
+    border-radius: 25px;
+    width: 33%;
+    padding: 3%;
+}
+
+label{
+    font-size: 15px;display: block;
+}
+.inputs{
+    width: 100%;
+    padding: 2.5% 0%;
+}
+
+input{
+    width: 100%;background-color: rgb(241, 236, 230);
+    border: none;padding: 3%;margin-top: 3%;border-radius: 25px;
+}
+
+#sign-up-button{
+    padding: 2% 4%;
+    border: none;
+    color: white;
+    border-radius: 25px;    background-color: #EF6F70;
+    font-size: 15px;
+margin-top: 2%;
+
+}
+iframe{
+    padding: 0%;margin: 0%;border: none;height: auto;display: block;
+
+}
+
+@media screen and (max-width:700px){
+    #form-container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px){
+    #form-container{
+        width: 90%;padding: 6%;
+    }
+}
